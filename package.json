@@ -1,0 +1,16 @@
+{
+  "name": "tienda-web",
+  "version": "1.0.0",
+  "description": "Página web pequeña de una tienda con Node.js, Express y SQLite (arquitectura MVC)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

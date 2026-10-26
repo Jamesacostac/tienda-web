@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Urbana | Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <p class="logo">Tienda Urbana</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+    <p>Escríbenos y guardaremos tu mensaje en la base de datos.</p>
+
+    <form id="form-contacto" class="formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="texto">Mensaje</label>
+      <textarea id="texto" name="texto" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Enviar mensaje</button>
+      <p id="respuesta" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tienda Urbana · Proyecto de Desarrollo Web</p>
+  </footer>
+
+  <script src="js/contacto.js"></script>
+</body>
+</html>

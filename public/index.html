@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Urbana | Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Tienda Urbana</h1>
+    <nav>
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Ropa y accesorios para todos los días</h2>
+      <p>Encuentra camisetas, tenis y gorras a buen precio, con envío a todo el país.</p>
+      <button type="button" id="btn-ver-productos" class="btn">Ver productos</button>
+    </section>
+
+    <section class="destacados">
+      <h2>Nuestras categorías</h2>
+      <div class="grid">
+        <figure class="card">
+          <img src="img/camiseta.svg" alt="Camiseta">
+          <figcaption>Ropa</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="img/tenis.svg" alt="Tenis deportivos">
+          <figcaption>Calzado</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="img/gorra.svg" alt="Gorra">
+          <figcaption>Accesorios</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tienda Urbana · Proyecto de Desarrollo Web</p>
+  </footer>
+
+  <script>
+    document.getElementById('btn-ver-productos').addEventListener('click', () => {
+      window.location.href = 'productos.html';
+    });
+  </script>
+</body>
+</html>

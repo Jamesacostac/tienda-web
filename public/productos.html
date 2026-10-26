@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Urbana | Productos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <p class="logo">Tienda Urbana</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html" class="activo">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Productos</h1>
+    <p>Los productos se cargan desde la base de datos a través de la API <code>/api/productos</code>.</p>
+
+    <div id="lista-productos" class="grid">
+      <p>Cargando productos...</p>
+    </div>
+
+    <aside class="carrito">
+      <h2>Carrito</h2>
+      <p>Productos: <strong id="carrito-cantidad">0</strong> · Total: <strong id="carrito-total">$0</strong></p>
+      <button type="button" id="btn-vaciar" class="btn btn-secundario">Vaciar carrito</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tienda Urbana · Proyecto de Desarrollo Web</p>
+  </footer>
+
+  <script src="js/productos.js"></script>
+</body>
+</html>
