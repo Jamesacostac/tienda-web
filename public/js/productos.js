@@ -1,3 +1,5 @@
+import { obtenerProductos } from './api.js';
+
 const lista = document.getElementById('lista-productos');
 const cantidadEl = document.getElementById('carrito-cantidad');
 const totalEl = document.getElementById('carrito-total');
@@ -13,8 +15,7 @@ function actualizarCarrito() {
 
 async function cargarProductos() {
   try {
-    const respuesta = await fetch('/api/productos');
-    const productos = await respuesta.json();
+    const productos = await obtenerProductos();
 
     lista.innerHTML = '';
     for (const producto of productos) {
@@ -34,7 +35,7 @@ async function cargarProductos() {
       lista.appendChild(card);
     }
   } catch {
-    lista.innerHTML = '<p>No se pudieron cargar los productos. ¿Está corriendo el servidor?</p>';
+    lista.innerHTML = '<p>No se pudieron cargar los productos.</p>';
   }
 }
 
